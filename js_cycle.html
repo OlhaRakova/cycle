@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choice</title>
+</head>
+<body>
+    <script>
+        console.log("Задание1: вывод четных чисел от 0 до 10");
+        for (let i = 0; i <= 10; i++) {
+            if (i % 2 == 0) { 
+                console.log(i);
+                 }
+        }
+
+        console.log("Задание2:вывод чисел кратных 2");
+        let n = 0;
+        let i = 0;
+        while(i<10){
+            if(n%2==0){
+                console.log(n);
+                i++;
+            }
+            n++;
+        }
+
+        let symbol = "";
+        while(symbol!="."){
+            symbol = prompt("Считаю символы, пока не введете точку");
+            console.log(symbol);
+        }
+
+        let k = prompt("Введите число");
+        let l="";
+        let z = 0;
+        do{
+            l+="*";
+            z++;
+        } while (z<k);         
+        console.log(l);
+    </script>
+</body>
+</html>
